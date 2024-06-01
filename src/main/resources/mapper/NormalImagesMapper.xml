@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.junli.boutique.mapper.NormalImagesMapper">
+
+    <resultMap id="BaseResultMap" type="com.junli.boutique.domain.NormalImages">
+            <id property="imageId" column="image_id" jdbcType="INTEGER"/>
+            <result property="imageUserId" column="image_user_id" jdbcType="BIGINT"/>
+            <result property="imageName" column="image_name" jdbcType="VARCHAR"/>
+            <result property="imageType" column="image_type" jdbcType="VARCHAR"/>
+            <result property="imageUrl" column="image_url" jdbcType="VARCHAR"/>
+            <result property="imageUploadTime" column="image_upload_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        image_id,image_user_id,image_name,
+        image_type,image_url,image_upload_time
+    </sql>
+</mapper>
